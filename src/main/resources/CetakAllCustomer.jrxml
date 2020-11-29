@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CetakAllCustomer" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9f5eb3f8-edee-40c2-bbfc-2694028f8d73">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="nama" class="java.lang.String"/>
+	<field name="alamat" class="java.lang.String"/>
+	<field name="namaKota" class="java.lang.String"/>
+	<field name="pendapatan" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="89" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="82ca401f-187f-4af5-9881-6c916c98f7ae" x="0" y="0" width="555" height="79"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Customer PT. Mencari Sayang]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="69cbdd9e-6bc8-4082-a25b-a6658422cc50" x="0" y="0" width="67" height="37"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+					<topPen lineWidth="2.0" lineStyle="Solid"/>
+					<leftPen lineWidth="2.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid"/>
+					<rightPen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Customer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="919c8444-e7e5-444b-b828-c15b7c46ef70" x="67" y="0" width="140" height="37"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+					<topPen lineWidth="2.0" lineStyle="Solid"/>
+					<leftPen lineWidth="2.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid"/>
+					<rightPen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Customer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bf7325d1-b3d2-42fb-8e68-06a05c62e3bd" x="207" y="0" width="167" height="37"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+					<topPen lineWidth="2.0" lineStyle="Solid"/>
+					<leftPen lineWidth="2.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid"/>
+					<rightPen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6826c1ea-0e35-42e0-b133-4a2bbda8dc64" x="374" y="0" width="77" height="37"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+					<topPen lineWidth="2.0" lineStyle="Solid"/>
+					<leftPen lineWidth="2.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid"/>
+					<rightPen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kota]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="adedcfd9-2f8d-47aa-972f-3392f44e3120" x="451" y="0" width="104" height="37"/>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+					<topPen lineWidth="2.0" lineStyle="Solid"/>
+					<leftPen lineWidth="2.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="2.0" lineStyle="Solid"/>
+					<rightPen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pendapatan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c1313db7-53a2-44e8-ae45-f7bf00656140" x="0" y="0" width="67" height="20"/>
+				<box>
+					<pen lineWidth="2.0"/>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="056535c6-c18d-4dd3-b76b-10ee26b70ca8" x="67" y="0" width="140" height="20"/>
+				<box>
+					<pen lineWidth="2.0"/>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="43d47e82-c0ae-4cd1-8ccf-297b1e03e9ec" x="207" y="0" width="167" height="20"/>
+				<box>
+					<pen lineWidth="2.0"/>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4653d444-8a21-4ab8-b16a-f99ce7e74927" x="374" y="0" width="77" height="20"/>
+				<box>
+					<pen lineWidth="2.0"/>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{namaKota}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fd49d8e4-c1f6-4ecd-8e20-09d5f43b1e71" x="451" y="0" width="104" height="20"/>
+				<box>
+					<pen lineWidth="2.0"/>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pendapatan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Data Customer</h1>
+<div class="container">
+    <div>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <th>Id</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>Kota</th>
+                <th>Pendapatan</th>
+                <th>Action</th>
+            </tr>
+            <tr th:each="Customers : ${Customer}">
+                <td th:text="${Customers.id}"></td>
+                <td th:text="${Customers.nama}"></td>
+                <td th:text="${Customers.alamat}"></td>
+                <td th:text="${Customers.namaKota}"></td>
+                <td th:text="${Customers.pendapatan}"></td>
+                <td>
+                    <a th:href="${'/list-customer/edit/' + Customers.id}">
+                        <i class="fa fa-pencil"></i> Update
+                    </a>
+                    |
+                    <a th:href="${'/list-customer/delete/' + Customers.id}">
+                        <i class="fa fa-pencil"> </i> Delete
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<br>
+<div>
+    <a href="/list-customer/create/">
+        <button>Tambah</button>
+    </a>
+</div>
+<div>
+    <a href="/list-customer/download/">
+        <button>Download as PDF</button>
+    </a>
+</div>
+</body>
+</html>
